@@ -1,0 +1,100 @@
+.statistics-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 30px
+    }
+}
+
+.statistics-box-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    .statistics-info {
+        font: 500 1rem 'Work Sans', sans-serif;
+    }
+    .statistics-proc {
+        font: 400 1rem 'Work Sans', sans-serif;
+    }
+}
+
+progress {
+    background: red;
+    height: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+progress::-webkit-progress-bar {
+    background: rgb(236, 236, 236);
+}
+
+.proges-1::-webkit-progress-value {
+    background: rgb(19, 141, 19);
+}
+
+.proges-2::-webkit-progress-value {
+    background: rgb(214, 218, 15);
+}
+
+.proges-3::-webkit-progress-value {
+    background: rgb(199, 17, 11);
+}
+
+.proges-4::-webkit-progress-value {
+    background: rgb(30, 4, 175);
+}
+
+progress:last-child {
+    margin: 0;
+}
+
+.statistics-donate {
+    background: url(../img/services/donate-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    @media (max-width: 990px) {
+        padding: 15px;
+    }
+    .donate-title {
+        font: 600 3rem 'Work Sans', sans-serif;
+        color: #fce042;
+        margin-bottom: 10px;
+        @media (max-width: 990px) {
+            font-size: 2rem;
+        }
+    }
+    .donate-text {
+        color: #fff;
+        margin-bottom: 20px;
+        font: 400 1.4rem/30px 'Work Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.2rem;
+        }
+    }
+    a {
+        color: #fff;
+        font: 400 1.2rem 'Work Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.statistics-wrap-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+}

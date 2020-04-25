@@ -1,0 +1,178 @@
+header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    transition: .3s;
+    top: 0;
+    background: #fff;
+    box-sizing: border-box;
+    @media (max-width: 990px) {
+        transition: .3s;
+        padding: 0;
+    }
+    .btn-red {
+        @media (max-width: 990px) {
+            display: none;
+        }
+    }
+    .container {
+        background: #fff;
+        padding: 20px 10px;
+        @media (max-width: 990px) {
+            padding: 10px;
+        }
+    }
+    nav {
+        @media (max-width: 990px) {
+            position: fixed;
+            width: 100vw;
+            z-index: 99;
+            top: 0;
+            height: 100vh;
+            background: #fff;
+            left: 0;
+            transition: .35s;
+            transform: translateX(-100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 20px;
+            @media (max-width: 990px) {
+                flex-direction: column;
+                margin: 0;
+                justify-content: center;
+                text-align: center;
+            }
+            li {
+                padding: 15px 20px;
+                @media (max-width: 990px) {
+                    margin: 15px 0;
+                }
+                a {
+                    transition: .3s;
+                    color: #222222;
+                    position: relative;
+                    font: 500 1.125rem 'Work Sans', sans-serif;
+                    &::before {
+                        content: '';
+                        height: 1px;
+                        width: 100%;
+                        background: #000;
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        opacity: 0;
+                        transform: translateX(65px);
+                        transition: .35s;
+                    }
+                    &:hover {
+                        &::before {
+                            transform: translateX(0);
+                            opacity: 1;
+                        }
+                    }
+                    @media (max-width: 1024px) {
+                        padding: 15px;
+                    }
+                    @media (max-width: 990px) {
+                        color: #000;
+                        padding: 0;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.close {
+    display: none;
+    @media (max-width: 990px) {
+        position: absolute;
+        height: 30px;
+        top: 20px;
+        display: block;
+        right: 20px;
+    }
+}
+
+.mob-menu-active {
+    transform: translateX(0);
+    opacity: .95;
+}
+
+nav {
+    ul {
+        li {
+            @media (max-width: 990px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        padding: 0 10px;
+    }
+}
+
+.logo-white {
+    height: 50px;
+    @media (max-width: 990px) {
+        height: 40px;
+    }
+}
+
+.fixed-header {
+    background: #fff;
+    transition: .3s;
+    padding: 0;
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+    @media (max-width: 990px) {
+        padding: 0;
+    }
+    nav {
+        ul {
+            li {
+                a {
+                    color: #222222;
+                }
+            }
+        }
+    }
+}
+
+.menu-btn {
+    display: none;
+    height: 30px;
+    @media (max-width: 990px) {
+        display: block;
+    }
+}
+
+.white-popup-block {
+    position: relative;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border-right: 5px;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

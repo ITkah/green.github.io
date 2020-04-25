@@ -1,0 +1,21 @@
+.investor-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
+    margin-bottom: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+    .investor-title {
+        margin-bottom: 10px;
+        font: 600 1.3rem 'Work Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.2rem;
+        }
+    }
+}

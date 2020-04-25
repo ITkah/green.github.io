@@ -1,0 +1,40 @@
+.technology-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.technology-box {
+    border: 1px solid rgb(180, 178, 178);
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+    .technology-img-box {
+        height: 250px;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: .3s;
+        }
+    }
+    .technology-title {
+        padding: 10px;
+        font: 600 1.4rem 'Work Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.2rem;
+        }
+    }
+    .technology-text {
+        padding: 10px;
+        padding-top: 0;
+        padding-bottom: 15px;
+        font: 400 1rem/23px 'Work Sans', sans-serif;
+    }
+}

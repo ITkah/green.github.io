@@ -1,0 +1,22 @@
+.great-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    .great-title {
+        margin-bottom: 20px;
+        font: 600 2rem 'Work Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.5rem;
+        }
+    }
+    .great-text {
+        font: 400 1rem/24px 'Work Sans', sans-serif;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

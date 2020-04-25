@@ -1,0 +1,30 @@
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+    }
+    .services-box {
+        display: flex;
+        align-items: center;
+    }
+    .services-title {
+        margin-bottom: 10px;
+        font: 600 1.2rem 'Work Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: 1.125rem;
+        }
+    }
+    .services-text {
+        margin-bottom: 10px;
+        opacity: .8;
+        font: 500 .95rem 'Work Sans', sans-serif;
+    }
+    img {
+        height: 55px;
+        width: 55px;
+        object-fit: contain;
+        margin-right: 20px;
+    }
+}
