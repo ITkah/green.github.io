@@ -8,7 +8,8 @@
 }
 
 .technology-box {
-    border: 1px solid rgb(180, 178, 178);
+    border: 1px solid #cecece;
+    cursor: pointer;
     &:hover {
         img {
             transform: scale(1.1);
@@ -26,15 +27,93 @@
     }
     .technology-title {
         padding: 10px;
-        font: 600 1.4rem 'Work Sans', sans-serif;
+        padding-bottom: 7px;
+        font: 500 1.3rem 'Work Sans', sans-serif;
         @media (max-width: 990px) {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
     }
-    .technology-text {
+    .text-simple {
         padding: 10px;
         padding-top: 0;
-        padding-bottom: 15px;
-        font: 400 1rem/23px 'Work Sans', sans-serif;
+        padding-bottom: 5px;
+    }
+}
+
+.item-tech {
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .item-tech-container {
+        .main-img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .item-tech-sm {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+
+.acc-box {
+    margin-bottom: 1px;
+    position: relative;
+}
+
+.acc-active {
+    border: 1px solid #cecece;
+    &::before {
+        content: '';
+        height: 1px;
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background: #1ab06b;
+        top: 0;
+    }
+}
+ 
+.acc-head {
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 576px) {
+        padding: 10px;
+    }
+    .plus {
+        &::before {
+            content: '+';
+            font: 600 1rem 'Work Sans', sans-serif;
+            color: #292929;
+        }
+    }
+    .minus {
+        &::before {
+            content: '-';
+            font: 600 1rem 'Work Sans', sans-serif;
+            color: #292929;
+        }
+    }
+    p {
+        font: 600 1rem 'Work Sans', sans-serif;
+        color: #292929;
+    }
+	cursor: pointer;
+}
+ 
+.acc-body {
+	padding: 10px 25px;
+	margin-bottom: 5px;
+    display: none;
+    @media (max-width: 576px) {
+        padding: 10px;
     }
 }

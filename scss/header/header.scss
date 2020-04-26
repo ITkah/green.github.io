@@ -51,20 +51,20 @@ header {
                 text-align: center;
             }
             li {
-                padding: 15px 20px;
+                padding: 15px;
                 @media (max-width: 990px) {
                     margin: 15px 0;
                 }
                 a {
                     transition: .3s;
-                    color: #222222;
+                    color: #262626;
                     position: relative;
-                    font: 500 1.125rem 'Work Sans', sans-serif;
+                    font: 600 1rem 'Work Sans', sans-serif;
                     &::before {
                         content: '';
                         height: 1px;
                         width: 100%;
-                        background: #000;
+                        background: #3693d6;
                         position: absolute;
                         bottom: -10px;
                         left: 0;
@@ -77,6 +77,7 @@ header {
                             transform: translateX(0);
                             opacity: 1;
                         }
+                        color: #3693d6;
                     }
                     @media (max-width: 1024px) {
                         padding: 15px;

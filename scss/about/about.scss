@@ -18,21 +18,22 @@
     align-items: flex-start;
     justify-content: space-between;
     span {
-        font: 700 2rem 'Work Sans', sans-serif;
+        font: 600 2rem 'Work Sans', sans-serif;
         margin-bottom: 10px;
         color: #cecece;
         display: block;
     }
     .about-title {
-        font: 600 1.8rem 'Work Sans', sans-serif;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
+        font: 500 1.6rem 'Work Sans', sans-serif;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
         display: block;
         width: 100%;
         position: relative;
+        color: #292929;
         border-bottom: 1px solid #cecece;
         @media (max-width: 990px) {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 10px;
             padding-bottom: 10px;
         }
@@ -46,13 +47,9 @@
             background: #3693d6;
         }
     }
-    .about-text {
-        font: 400 1rem 'Work Sans', sans-serif;
-        margin-bottom: 15px;
-    }
     a {
-        color: #000;
-        font: 500 1rem 'Work Sans', sans-serif;
+        color: #454545;
+        font: 500 .95rem 'Work Sans', sans-serif;
         &:hover {
             color: #3693d6;
         }

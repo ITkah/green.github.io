@@ -26,6 +26,15 @@ $(document).ready(function() {
         return false;
     });
 
+    function f_acc(){
+        $(".acc-head").children(".plus").removeClass("minus");
+        $('.accordeon .acc-body').not($(this).next()).slideUp(200).parent(".acc-box").removeClass("acc-active");
+        $(this).next().slideToggle(200).parent(".acc-box").addClass("acc-active");
+        $(this).children(".plus").addClass("minus");
+    }
+
+    $('.accordeon .acc-head').on('click', f_acc);
+
     $('.slider-project').slick({
         dots: true,
         infinite: false,

@@ -1,6 +1,6 @@
 .statistics-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
     @media (max-width: 990px) {
         grid-template-columns: 1fr;
@@ -12,20 +12,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     .statistics-info {
-        font: 500 1rem 'Work Sans', sans-serif;
+        color: #292929;
+        font: 500 .87rem 'Work Sans', sans-serif;
     }
     .statistics-proc {
-        font: 400 1rem 'Work Sans', sans-serif;
+        font: 500 .9rem 'Work Sans', sans-serif;
     }
 }
 
 progress {
     background: red;
-    height: 8px;
+    height: 6px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 progress::-webkit-progress-bar {
@@ -67,22 +68,23 @@ progress:last-child {
     .donate-title {
         font: 600 3rem 'Work Sans', sans-serif;
         color: #fce042;
-        margin-bottom: 10px;
+        margin-bottom: -10px;
         @media (max-width: 990px) {
             font-size: 2rem;
+            margin-bottom: 5px;
         }
     }
     .donate-text {
         color: #fff;
         margin-bottom: 20px;
-        font: 400 1.4rem/30px 'Work Sans', sans-serif;
+        font: 600 1.125rem/28px 'Work Sans', sans-serif;
         @media (max-width: 990px) {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
     a {
         color: #fff;
-        font: 400 1.2rem 'Work Sans', sans-serif;
+        font: 600 1.125rem/28px 'Work Sans', sans-serif;
         @media (max-width: 990px) {
             font-size: 1rem;
         }

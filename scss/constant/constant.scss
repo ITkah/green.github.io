@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -28,7 +28,7 @@ p {
 }
 
 .padding {
-    padding: 0 40px;
+    padding: 0 45px;
     @media (max-width: 990px) {
         padding: 0 20px;
     }

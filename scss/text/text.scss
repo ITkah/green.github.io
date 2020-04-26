@@ -1,10 +1,10 @@
 .title-xl {
-    font: 700 1.85rem 'Work Sans', sans-serif;
-    color: #333;
-    margin-bottom: 40px;
+    font: 600 1.4rem 'Work Sans', sans-serif;
+    color: #292929;
     position: relative;
     border-bottom: 1px solid #cecece;
     padding-bottom: 20px;
+    margin-bottom: 25px;
     &::before {
         content: '';
         height: 3px;
@@ -21,8 +21,8 @@
 }
 
 .text-simple {
-    color: #333;
-    font: 400 1.05rem/26px 'Work Sans', sans-serif;
+    color: #454545;
+    font: 400 .95rem/22px 'Work Sans', sans-serif;
     margin-bottom: 15px;
     @media (max-width: 990px) {
         font-size: .9rem;

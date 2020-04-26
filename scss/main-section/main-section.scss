@@ -1,6 +1,4 @@
 .main-section {
-    background: url(../img/main-section/main-bg.jpg) no-repeat center center;
-    background-size: cover;
     height: 600px;
     @media (max-width: 990px) {
         height: 100%;
@@ -10,10 +8,13 @@
         display: flex;
         align-items: center;
         height: 100%;
-        padding: 0 40px;
+        padding: 0 45px;
         justify-content: flex-start;
+        background: url(../img/main-section/main-bg.jpg) no-repeat center center;
+        background-size: cover;
         @media (max-width: 990px) {
             padding: 0;
+            background: transparent;
         }
     }
 }
@@ -37,7 +38,7 @@
         }
         h1 {
             position: relative;
-            font: 700 1.75rem 'Work Sans', sans-serif;
+            font: 600 1.75rem 'Work Sans', sans-serif;
             @media (max-width: 990px) {
                 font-size: 1.6rem;
             }
@@ -59,18 +60,16 @@
             padding: 20px;
         }
         p {
-            font: 400 1.125rem/30px 'Work Sans', sans-serif;
+            color: rgb(45, 45, 45);
+            font: 400 1rem/28px 'Work Sans', sans-serif;
         }
     }
 }
 
 .main-section-2 {
-    background: url(../img/main-section/main-bg.jpg) no-repeat center center;
-    background-size: cover;
     height: 400px;
     @media (max-width: 990px) {
         height: 100%;
-        background: transparent;
     }
     .container {
         display: flex;
@@ -78,8 +77,11 @@
         height: 100%;
         padding: 0 40px;
         justify-content: flex-start;
+        background: url(../img/main-section/main-bg.jpg) no-repeat center center;
+        background-size: cover;
         @media (max-width: 990px) {
             padding: 0;
+            background: transparent;
         }
     }
     .main-box-title {
@@ -100,12 +102,9 @@
 }
 
 .main-section-3 {
-    background: url(../img/about/about-bg.jpg) no-repeat center center;
-    background-size: cover;
     height: 400px;
     @media (max-width: 990px) {
         height: 100%;
-        background: transparent;
     }
     .container {
         display: flex;
@@ -113,8 +112,11 @@
         height: 100%;
         padding: 0 40px;
         justify-content: flex-start;
+        background: url(../img/about/about-bg.jpg) no-repeat center center;
+        background-size: cover;
         @media (max-width: 990px) {
             padding: 0;
+            background: transparent;
         }
     }
     .main-box-title {

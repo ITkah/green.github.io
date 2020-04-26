@@ -11,19 +11,14 @@
     }
     .services-title {
         margin-bottom: 10px;
-        font: 600 1.2rem 'Work Sans', sans-serif;
+        font: 600 1.125rem 'Work Sans', sans-serif;
         @media (max-width: 990px) {
-            font-size: 1.125rem;
+            font-size: 1rem;
         }
     }
-    .services-text {
-        margin-bottom: 10px;
-        opacity: .8;
-        font: 500 .95rem 'Work Sans', sans-serif;
-    }
     img {
-        height: 55px;
-        width: 55px;
+        height: 60px;
+        width: 60px;
         object-fit: contain;
         margin-right: 20px;
     }

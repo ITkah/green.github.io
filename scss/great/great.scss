@@ -6,10 +6,10 @@
         grid-template-columns: 1fr;
     }
     .great-title {
-        margin-bottom: 20px;
-        font: 600 2rem 'Work Sans', sans-serif;
+        margin-bottom: 15px;
+        font: 600 1.4rem 'Work Sans', sans-serif;
         @media (max-width: 990px) {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
         }
     }
     .great-text {
