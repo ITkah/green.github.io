@@ -236,6 +236,7 @@ header {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    max-width: 990px;
     background: url(../img/main-section/main-bg.jpg) no-repeat center center;
     background-size: cover; }
     @media (max-width: 990px) {
@@ -311,7 +312,8 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background: url(../img/main-section/main-bg.jpg) no-repeat center center;
-    background-size: cover; }
+    background-size: cover;
+    max-width: 990px; }
     @media (max-width: 990px) {
       .main-section-2 .container {
         padding: 0;
@@ -352,7 +354,8 @@ header {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background: url(../img/about/about-bg.jpg) no-repeat center center;
-    background-size: cover; }
+    background-size: cover;
+    max-width: 990px; }
     @media (max-width: 990px) {
       .main-section-3 .container {
         padding: 0;
@@ -1057,7 +1060,7 @@ body {
   font-family: 'Work Sans', sans-serif; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0 auto; }
 
 ul {

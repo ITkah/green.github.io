@@ -10,6 +10,7 @@
         height: 100%;
         padding: 0 45px;
         justify-content: flex-start;
+        max-width: 990px;
         background: url(../img/main-section/main-bg.jpg) no-repeat center center;
         background-size: cover;
         @media (max-width: 990px) {
@@ -79,6 +80,7 @@
         justify-content: flex-start;
         background: url(../img/main-section/main-bg.jpg) no-repeat center center;
         background-size: cover;
+        max-width: 990px;
         @media (max-width: 990px) {
             padding: 0;
             background: transparent;
@@ -114,6 +116,7 @@
         justify-content: flex-start;
         background: url(../img/about/about-bg.jpg) no-repeat center center;
         background-size: cover;
+        max-width: 990px;
         @media (max-width: 990px) {
             padding: 0;
             background: transparent;
