@@ -570,6 +570,9 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   margin-bottom: 15px; }
+  @media (max-width: 990px) {
+    .item-tech .item-tech-sm {
+      grid-template-columns: 1fr; } }
 
 .acc-box {
   margin-bottom: 1px;
