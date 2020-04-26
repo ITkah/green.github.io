@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    position: relative;
     z-index: 999;
     width: 100%;
     transition: .3s;
@@ -9,6 +9,7 @@ header {
     @media (max-width: 990px) {
         transition: .3s;
         padding: 0;
+        position: fixed;
     }
     .btn-red {
         @media (max-width: 990px) {
@@ -20,6 +21,8 @@ header {
         padding: 10px;
     }
     nav {
+        right: -7px;
+        position: relative;
         @media (max-width: 990px) {
             position: fixed;
             width: 100vw;
@@ -28,6 +31,7 @@ header {
             height: 100vh;
             background: #fff;
             left: 0;
+            right: 0;
             transition: .35s;
             transform: translateX(-100%);
             display: flex;
@@ -72,9 +76,14 @@ header {
             }
             li:last-child{
                 border: none;
+                padding-right: 0;
             }
         }
     }
+}
+
+.fixed-header {
+    position: fixed;
 }
 
 .close {
@@ -106,7 +115,7 @@ nav {
 .header-container {
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    padding: 0;
     justify-content: space-between;
     @media (max-width: 990px) {
         padding: 0 10px;
@@ -121,6 +130,7 @@ nav {
     background: #fff;
     transition: .3s;
     padding: 0;
+    position: fixed;
     box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
     @media (max-width: 990px) {
         padding: 0;
@@ -156,4 +166,33 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header-top {
+    .container {
+        border-top: 7px solid #2e81ca;
+    }
+}
+
+.header-top-wrap {
+    padding: 20px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    @media (max-width: 990px) {
+        display: none;
+    }
+    .header-box-sm {
+        display: flex;
+        margin-right: 15px;
+        i {
+            color: #2e81ca;
+            font-size: .8rem;
+        }
+        p {
+            padding-left: 10px;
+            color: #3f3f3f;
+            font: 400 .8rem 'Work Sans', sans-serif;
+        }
+    }
 }

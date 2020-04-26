@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 62) {
+            $('header').addClass("fixed-header");
+        } else {
+            $('header').removeClass("fixed-header");
+        }
+    });
+
     $(".menu-btn").on("click", function() {
         $("nav").addClass("mob-menu-active");
     });
@@ -37,7 +45,7 @@ $(document).ready(function() {
 
     $('.slider-project').slick({
         dots: false,
-        arrows: true,
+        arrows: false,
         infinite: false,
         speed: 300,
         slidesToShow: 4,
@@ -46,10 +54,10 @@ $(document).ready(function() {
                 breakpoint: 1280,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     infinite: true,
-                    dots: false,
-                    arrows: true,
+                    dots: true,
+                    arrows: false,
                 }
             },
             {
