@@ -52,29 +52,14 @@ header {
                 border-right: 1px solid #d3d3d3;
                 @media (max-width: 990px) {
                     margin: 15px 0;
+                    border: none;
                 }
                 a {
                     transition: .3s;
                     color: #2d2d2d;
                     position: relative;
-                    font: 600 .95rem 'Work Sans', sans-serif;
-                    &::before {
-                        content: '';
-                        height: 1px;
-                        width: 100%;
-                        background: #3693d6;
-                        position: absolute;
-                        bottom: -10px;
-                        left: 0;
-                        opacity: 0;
-                        transform: translateX(65px);
-                        transition: .35s;
-                    }
+                    font: 500 .95rem 'Work Sans', sans-serif;
                     &:hover {
-                        &::before {
-                            transform: translateX(0);
-                            opacity: 1;
-                        }
                         color: #3693d6;
                     }
                     @media (max-width: 990px) {

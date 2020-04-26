@@ -1,12 +1,53 @@
 .project {
     .slick-dots {
-        bottom: -45px;
+        bottom: -40px;
     }
     .slick-dots li button:before {
         font-size: 40px;
     }
     .slick-dots li.slick-active button:before {
         opacity: 1;
+    }
+    .slick-prev:before, .slick-next:before {
+        color: #000;
+        opacity: 1;
+    }
+    .slick-prev:before {
+        content: '\f053';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 600;
+        color: #000;
+        font-size: 12px;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #e4e4e4;
+    }
+    .slick-next:before {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: '\f053';
+        font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+        font-weight: 600;
+        color: #000;
+        font-size: 12px;
+        transform: rotate(180deg);
+        height: 30px;
+        width: 30px;
+        border: 1px solid #e4e4e4;
+    }
+    .slick-prev {
+        left: auto;
+        right: 43px;
+        top: -48px;
+    }
+    .slick-next {
+        left: auto;
+        right: 11px;
+        top: -48px;
     }
 }
 
@@ -16,6 +57,9 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    @media (max-width: 990px) {
+        padding: 0 5px;
+    }
     &:hover {
         img {
             transform: scale(1.1);

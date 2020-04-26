@@ -36,7 +36,8 @@ $(document).ready(function() {
     $('.accordeon .acc-head').on('click', f_acc);
 
     $('.slider-project').slick({
-        dots: true,
+        dots: false,
+        arrows: true,
         infinite: false,
         speed: 300,
         slidesToShow: 4,
@@ -47,21 +48,26 @@ $(document).ready(function() {
                     slidesToShow: 3,
                     slidesToScroll: 2,
                     infinite: true,
-                    dots: true
+                    dots: false,
+                    arrows: true,
                 }
             },
             {
                 breakpoint: 990,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    dots: true,
+                    arrows: false,
                 }
             },
             {
                 breakpoint: 360,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
                 }
             }
             // You can unslick at a given breakpoint now by adding:
