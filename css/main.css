@@ -20,10 +20,7 @@ header {
       display: none; } }
   header .container {
     background: #fff;
-    padding: 20px 10px; }
-    @media (max-width: 990px) {
-      header .container {
-        padding: 10px; } }
+    padding: 10px; }
   @media (max-width: 990px) {
     header nav {
       position: fixed;
@@ -85,7 +82,8 @@ header {
                 justify-content: center;
         text-align: center; } }
     header nav ul li {
-      padding: 15px; }
+      padding: 5px 15px;
+      border-right: 1px solid #d3d3d3; }
       @media (max-width: 990px) {
         header nav ul li {
           margin: 15px 0; } }
@@ -93,9 +91,9 @@ header {
         -webkit-transition: .3s;
         -o-transition: .3s;
         transition: .3s;
-        color: #262626;
+        color: #2d2d2d;
         position: relative;
-        font: 600 1rem 'Work Sans', sans-serif; }
+        font: 600 .95rem 'Work Sans', sans-serif; }
         header nav ul li a::before {
           content: '';
           height: 1px;
@@ -118,15 +116,14 @@ header {
                 -ms-transform: translateX(0);
                     transform: translateX(0);
             opacity: 1; }
-        @media (max-width: 1024px) {
-          header nav ul li a {
-            padding: 15px; } }
         @media (max-width: 990px) {
           header nav ul li a {
             color: #000;
             padding: 0;
             font-size: 1.25rem;
             font-weight: bold; } }
+    header nav ul li:last-child {
+      border: none; }
 
 .close {
   display: none; }
@@ -167,10 +164,7 @@ header {
       padding: 0 10px; } }
 
 .logo-white {
-  height: 50px; }
-  @media (max-width: 990px) {
-    .logo-white {
-      height: 40px; } }
+  height: 40px; }
 
 .fixed-header {
   background: #fff;
@@ -1060,7 +1054,7 @@ body {
   font-family: 'Work Sans', sans-serif; }
 
 .container {
-  max-width: 1024px;
+  max-width: 1080px;
   margin: 0 auto; }
 
 ul {
@@ -1112,7 +1106,7 @@ a {
   outline: none; }
 
 main {
-  margin-top: 95px; }
+  margin-top: 70px; }
   @media (max-width: 990px) {
     main {
       margin-top: 65px; } }
