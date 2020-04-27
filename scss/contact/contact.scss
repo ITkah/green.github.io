@@ -78,6 +78,14 @@
 }
 
 .map-2 {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        @media (max-width: 990px ){
+            grid-template-columns: 1fr;
+        }
+    }
     img {
         max-width: 100%;
         height: auto;

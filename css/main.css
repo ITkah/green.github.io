@@ -518,6 +518,14 @@ header {
         grid-column-start: auto;
         grid-column-end: auto; } }
 
+.map-2 .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px; }
+  @media (max-width: 990px) {
+    .map-2 .container {
+      grid-template-columns: 1fr; } }
+
 .map-2 img {
   max-width: 100%;
   height: auto;
@@ -789,7 +797,11 @@ progress:last-child {
       .great-wrap .great-title {
         font-size: 1.1rem; } }
   .great-wrap .great-text {
+    color: #454545;
     font: 400 1rem/24px 'Work Sans', sans-serif; }
+    @media (max-width: 990px) {
+      .great-wrap .great-text {
+        font-size: .9rem; } }
   .great-wrap img {
     max-width: 100%;
     height: auto; }
@@ -1177,4 +1189,4 @@ main {
   margin-top: 20px; }
   @media (max-width: 990px) {
     main {
-      margin-top: 65px; } }
+      margin-top: 60px; } }

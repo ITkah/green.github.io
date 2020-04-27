@@ -13,7 +13,11 @@
         }
     }
     .great-text {
+        color: #454545;
         font: 400 1rem/24px 'Work Sans', sans-serif;
+        @media (max-width: 990px) {
+            font-size: .9rem;
+        }
     }
     img {
         max-width: 100%;
