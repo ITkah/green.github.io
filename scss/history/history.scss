@@ -1,10 +1,9 @@
 .history-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-gap: 30px;
     @media (max-width: 990px) {
-        grid-template-columns: 1fr;
-        grid-gap: 30px;
+        grid-gap: 25px;
     }
 }
 
@@ -27,12 +26,13 @@
     }
     .history-block {
         display: flex;
+        flex-direction: column;
     }
     img {
         object-fit: contain;
         height: 50px;
         width: 50px;
-        margin-right: 20px;
+        margin-bottom: 5px;
     }
     .history-sub-title {
         margin-bottom: 10px;

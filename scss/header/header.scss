@@ -123,7 +123,10 @@ nav {
 }
 
 .logo-white {
-    height: 40px;
+    height: 60px;
+    @media (max-width: 990px) {
+        height: 35px;
+    }
 }
 
 .fixed-header {
@@ -170,7 +173,7 @@ nav {
 
 .header-top {
     .container {
-        border-top: 7px solid #2e81ca;
+        border-top: 7px solid #0084ff;
     }
 }
 

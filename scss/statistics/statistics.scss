@@ -34,19 +34,23 @@ progress::-webkit-progress-bar {
 }
 
 .proges-1::-webkit-progress-value {
-    background: rgb(19, 141, 19);
+    background: #00ccff;
 }
 
 .proges-2::-webkit-progress-value {
-    background: rgb(214, 218, 15);
+    background: #ff7500;
 }
 
 .proges-3::-webkit-progress-value {
-    background: rgb(199, 17, 11);
+    background: #fbb03b;
 }
 
 .proges-4::-webkit-progress-value {
-    background: rgb(30, 4, 175);
+    background: #0084ff;
+}
+
+.proges-5::-webkit-progress-value {
+    background: rgb(235, 205, 38);
 }
 
 progress:last-child {
@@ -62,12 +66,24 @@ progress:last-child {
     align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
+    position: relative;
+    &::before {
+        content: '';
+        background: rgba(58,164,221,0.7);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
     @media (max-width: 990px) {
         padding: 15px;
     }
     .donate-title {
         font: 600 3rem 'Work Sans', sans-serif;
         color: #fce042;
+        position: relative;
+        z-index: 2;
         margin-bottom: -10px;
         @media (max-width: 990px) {
             font-size: 2rem;
@@ -76,6 +92,8 @@ progress:last-child {
     }
     .donate-text {
         color: #fff;
+        position: relative;
+        z-index: 2;
         margin-bottom: 20px;
         font: 600 1.125rem/28px 'Work Sans', sans-serif;
         @media (max-width: 990px) {
@@ -84,6 +102,8 @@ progress:last-child {
     }
     a {
         color: #fff;
+        position: relative;
+        z-index: 2;
         font: 600 1.125rem/28px 'Work Sans', sans-serif;
         @media (max-width: 990px) {
             font-size: 1rem;
